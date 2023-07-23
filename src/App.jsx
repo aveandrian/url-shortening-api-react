@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './App.css'
 import Navbar from './components/Navbar'
 import { faFacebookSquare, faTwitter, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import LinkShortener from './components/LinkShortener'
 
 function App() {
 
@@ -19,12 +20,11 @@ function App() {
         </div>
         <img className='header-img' src='/images/illustration-working.svg'></img>
       </section>
-      <div className='url-shorter'>
-          Shorten a link here...
-
-            Shorten It!
-      </div>
+      <section className='link-shorter'>
+        
+      </section>
       <section className='stats'>
+        <LinkShortener /> 
         <h1 className='stats-title'>Advanced Statistics</h1>
         <p className='stats-text'>
           Track how your links are performing across the web with our 

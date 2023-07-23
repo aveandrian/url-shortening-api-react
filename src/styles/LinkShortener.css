@@ -1,0 +1,76 @@
+.link-shortener-container {
+    width: 100%;
+    transform: translateY( -7vh);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.link-shortner-wrapper {
+    width: 100%;
+    padding-block: 4vh;
+    padding-inline: 5vw;
+    background: url('/images/bg-shorten-desktop.svg'), #3A3053;
+    border-radius: 10px;
+}
+
+.link-shortener-form {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.link-input {
+    height: 60px;
+    padding-inline: 0.8rem;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.link-input.input-error {
+    border: 3px solid hsl(0, 87%, 67%);
+}
+
+.link-input:focus {
+    outline: none;
+}
+
+.shorten-btn {
+    height: 60px;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    border: none;
+    background: #2BD1D1;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
+.error {
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 87%, 67%);
+
+}
+
+@media screen and (max-width: 950px) {
+    .link-shortener-form {
+        flex-direction: column;
+        gap: 2vh;
+        height: fit-content;
+    }
+
+    .link-input  {
+        width: 100%;
+        padding-block: 2vh;
+        padding-inline: 5vw;
+    }
+
+    .shorten-btn {
+        width: 100%;
+        height: fit-content;
+        padding-block: 2vh;
+        font-size: 1rem;
+    }
+ }
