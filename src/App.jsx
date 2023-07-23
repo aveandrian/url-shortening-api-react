@@ -1,23 +1,23 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <>
-      Features
-  Pricing
-  Resources
+      <Navbar />
+      <section className='header-section'>
+        <div className='header-description'>
+          <h1 className='header-title'>More than just shorter links</h1>
+          <p className='header-text'>
+            Build your brand's recognition and get detailed insights 
+            on how your links are performing.
+          </p>
+          <button className='get-started-btn '>Get Started</button>
+        </div>
+        <img className='header-img' src='/images/illustration-working.svg'></img>
+      </section>
 
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-  
   Shorten a link here...
 
   Shorten It!
@@ -65,7 +65,7 @@ function App() {
   Careers
   Contact
   
-  <div class="attribution">
+  <div className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
