@@ -18,7 +18,7 @@ function App() {
           </p>
           <button className='get-started-btn '>Get Started</button>
         </div>
-        <img className='header-img' src='/images/illustration-working.svg'></img>
+        <img className='header-img' src='/images/illustration-working.svg' alt='Header Illustration'></img>
       </section>
       <section className='link-shorter'>
         
@@ -70,7 +70,7 @@ function App() {
       </section>
       <section className='footer-section'>
         <div className='footer-content'>
-          <img className='footer-logo' src='/images/logo.svg'></img>
+          <img className='footer-logo' src='/images/logo.svg' alt='Logo'></img>
           <div className='links-section'>
             <h2 className='links-section-title'>Features</h2>
             <a>Link Shortening</a>

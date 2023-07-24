@@ -36,11 +36,9 @@ export default function LinkShortener(){
         .then(body => setShortLinksList(prev => [...prev, {
                 id: nanoid(),
                 fullLink: body.result.original_link,
-                shortLink: body.result.full_short_link,
-                isCopied: false
+                shortLink: body.result.full_short_link
             }
         ]))
-        // window.localStorage.setItem('shortenedLinks', JSON.stringify(shortLinksList))
         setLinkInput('')
     }
 
@@ -52,17 +50,6 @@ export default function LinkShortener(){
             return false
          }
      }
-       
-
-    function handleCopy(id){
-        setShortLinksList(prev => prev.map(item => {
-            if(item.id == id){
-                navigator.clipboard.writeText(item.shortLink)
-                return {...item, isCopied: true}
-            }
-            else return item
-        }))
-    }
 
     return (
         <div className="link-shortener-container">
@@ -73,7 +60,7 @@ export default function LinkShortener(){
                 </form>
                 {error && <p className="error">{error}</p>}
             </div>
-            {shortLinksList && shortLinksList.map(shortLinkListItem => <SuggestedLink key={shortLinkListItem.id} {...shortLinkListItem} handleCopy={handleCopy}/>)}
+            {shortLinksList && shortLinksList.map(shortLinkListItem => <SuggestedLink key={shortLinkListItem.id} {...shortLinkListItem} />)}
         </div>
     )
 }

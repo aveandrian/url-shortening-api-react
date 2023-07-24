@@ -45,10 +45,15 @@ body {
 
 .get-started-btn {
     border: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     color: white;
     background-color: hsl(180, 66%, 49%);
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
+}
+
+.get-started-btn:hover {
+    cursor: pointer;
+    background-color: #9BE3DF;
 }
 
 .header-img {
@@ -84,17 +89,17 @@ body {
 .stats-item  {
     z-index: 1;
     background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 50px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    padding-top: 3.125rem;
     position: relative;
 }
 
 .stats-img-wrapper {
     position: absolute;
     top: 0;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: #3A3053;
     display: flex;
@@ -161,6 +166,11 @@ body {
     color: hsl(0, 0%, 75%);
 }
 
+.links-section a:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+
 .socials {
     margin-left: auto;
     display: flex;
@@ -171,14 +181,24 @@ body {
     color:white;
 }
 
+.social-icon:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+
 .attribution, .attribution a {
     margin-top: 4vh;
     text-align: center;
     color: hsl(0, 0%, 75%);
 }
 
+.attribution a:hover {
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
 
-@media screen and (max-width: 950px) {
+
+@media screen and (max-width: 60rem) {
     .header-section {
         display: grid;
         grid-template-columns: 1fr;

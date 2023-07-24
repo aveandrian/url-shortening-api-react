@@ -26,19 +26,29 @@ nav {
     color: hsl(0, 0%, 75%);
 }
 
+.nav-items a:hover {
+    cursor: pointer;
+    color: hsl(255, 11%, 22%);
+}
+
 .login-btn {
     margin-left: auto;
 }
 
 .signup-btn {
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.25rem;
     color: white;
     background-color: hsl(180, 66%, 49%);
 }
 
-@media screen and (max-width: 950px) {
+.signup-btn:hover {
+    cursor: pointer;
+    background-color: #9BE3DF;
+}
+
+@media screen and (max-width: 60rem) {
     nav {
         padding-inline: 5vw;
         overflow: hidden
@@ -52,7 +62,7 @@ nav {
     }
 
     .nav-items-divider {
-        height: 1px;
+        height: 0.063rem;
         background-color: white;
         width: 100%;
     }
@@ -61,7 +71,7 @@ nav {
         z-index: 1;
         padding-block: 5vh;
         padding-inline: 5vw;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         position: absolute;
         top: 10vh;
         left: 5vw;

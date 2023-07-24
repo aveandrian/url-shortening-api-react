@@ -11,7 +11,7 @@
     padding-block: 4vh;
     padding-inline: 5vw;
     background: url('/images/bg-shorten-desktop.svg'), #3A3053;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .link-shortener-form {
@@ -21,14 +21,14 @@
 }
 
 .link-input {
-    height: 60px;
+    height: 3.75rem;
     padding-inline: 0.8rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     flex: 1;
 }
 
 .link-input.input-error {
-    border: 3px solid hsl(0, 87%, 67%);
+    border: 0.188rem solid hsl(0, 87%, 67%);
 }
 
 .link-input:focus {
@@ -36,9 +36,9 @@
 }
 
 .shorten-btn {
-    height: 60px;
+    height: 3.75rem;
     padding-inline: 2rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
     background: #2BD1D1;
     color: white;
@@ -47,14 +47,25 @@
     letter-spacing: 0.05em;
 }
 
+.shorten-btn:hover {
+    cursor: pointer;
+    background-color: #9BE3DF;
+}
+
 .error {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-style: italic;
     color: hsl(0, 87%, 67%);
 
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 60rem) {
+
+    .link-shortner-wrapper {
+        background: url('/images/bg-shorten-mobile.svg'), #3A3053;
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+    }
     .link-shortener-form {
         flex-direction: column;
         gap: 2vh;
