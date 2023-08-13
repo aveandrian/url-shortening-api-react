@@ -22,5 +22,4 @@ Users should be able to:
   - The `input` field is empty
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/url-shortening-api-react/assets/13519212/8616090e-38e3-4792-bb8f-ba64f1529f90)
